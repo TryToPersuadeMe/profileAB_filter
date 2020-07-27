@@ -1,0 +1,39 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/futurabNorm/FuturaMediumBT.eot");
+  src: local("☺"), url("../fonts/futurabNorm/FuturaMediumBT.woff") format("woff"),
+    url("../fonts/futurabNorm/FuturaMediumBT.ttf") format("truetype"),
+    url("../fonts/futurabNorm/FuturaMediumBT.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura Md BT";
+  src: url("../fonts/futurab/futurab.eot");
+  src: local("☺"), url("../fonts/futurab/futurab.woff") format("woff"),
+    url("../fonts/futurab/futurab.ttf") format("truetype"),
+    url("../fonts/futurab/futurab.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin RPro";
+  src: url("f../fonts/AcuminPro/Acumin-RPro.eot");
+  src: local("☺"), url("../fonts/AcuminPro/Acumin-RPro.woff") format("woff"),
+    url("../fonts/AcuminPro/Acumin-RPro.ttf") format("truetype"),
+    url("../fonts/AcuminPro/Acumin-RPro.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Fonts end */

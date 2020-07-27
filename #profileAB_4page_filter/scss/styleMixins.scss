@@ -1,0 +1,100 @@
+@include body_lock-shadow;
+
+/*  container for all content */
+.container {
+  @include container;
+  @media (max-width: 1000px) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    max-width: 1200px;
+  }
+  @media (max-width: 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+  }
+}
+
+/*Header*/
+.header {
+  @include header;
+}
+
+/* changelanguage in header */
+.language {
+  @include changeLanguage;
+}
+
+/* Navigation  */
+.first-screen__content-wrapper {
+  @include first-screen__content-wrapper;
+  
+}
+.navigation {
+  @include navigation;
+  font-family: "Montserrat";
+  &__panel {
+    @media (max-width: 768px) {
+      top: -70px;
+    }
+  }
+}
+
+nav {
+  background-color: #0094f7;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    top: 0;
+  }
+  @media (max-width: 768px) {
+    margin: 10px 0 0 0;
+    &::after {
+      background-color: transparent;
+    }
+  }
+}
+
+.arrow {
+  @include arrowSpoiler;
+}
+
+.window {
+  @include window;
+}
+
+.navResponsive {
+  @include navResponsive;
+}
+
+.logo {
+  @include logo;
+}
+
+.burger-menu {
+  @include burgerMenu;
+}
+
+.burger-menu-active {
+  @include burgerMenu_active;
+}
+
+/* other mixins */
+.column {
+  @include footerColumn;
+}
+
+/* footer */
+.social-media {
+  @include social-media;
+}
+
+.footer {
+  @include footer;
+}

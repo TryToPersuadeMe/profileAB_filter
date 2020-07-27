@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <title>American Butler</title>
+  </head>
+  <body>
+    <div class="overflow">
+      <!-- Header -->
+      <header class="header">
+        @@include("_#globalHeader.html")
+      </header>
+
+      <!-- main -->
+      <main>
+        <!-- arrow for back in prev page -->
+        <a class="arrowBackPage-fixed" href="#">
+          <img src="./img/icons/arrow__back-page-fixed.svg" alt="arrow back" />
+        </a>
+
+        <!-- first screen -->
+        @@include("_userProfile.html")
+
+        <!-- popUp -->
+        @@include("_askQuestion.html")
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        @@include("_#globalFooter.html")
+      </footer>
+    </div>
+
+    <!-- Join JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    @@include("_filterUserProfile.html")
+
+    <!-- main JS -->
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
