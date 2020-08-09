@@ -12,7 +12,7 @@ let path = {
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
     css: source_folder + "/scss/style.scss",
-    js: source_folder + "/js/**/*.js",
+    js: source_folder + "/js/main.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts: source_folder + "/fonts/**/*",
   },
@@ -32,7 +32,6 @@ fileinclude = require("gulp-file-include");
 del = require("del");
 scss = require("gulp-sass");
 autoprefixer = require("gulp-autoprefixer");
-group_media = require("gulp-group-css-media-queries");
 clean_css = require("gulp-clean-css");
 rename = require("gulp-rename");
 uglify = require("gulp-uglify-es").default;
@@ -40,6 +39,7 @@ imagemin = require("gulp-imagemin");
 webp = require("gulp-webp");
 webphtml = require("gulp-webp-html");
 webpcss = require("gulp-webpcss");
+
 
 // Создание локального сервера
 const browserSync = (params) => {
@@ -69,7 +69,7 @@ const css = () => {
         outputStyle: "expanded",
       })
     )
-    .pipe(group_media())
+
     .pipe(
       autoprefixer({
         cascade: true,
@@ -102,6 +102,8 @@ const js = () => {
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream());
 };
+
+
 
 // Манипуляции с IMG
 const images = () => {
